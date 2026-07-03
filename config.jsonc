@@ -1,0 +1,54 @@
+{
+  // Global bar settings
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "spacing": 8,
+
+  // Modules layout
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["battery#BAT0"],
+
+  /*
+    =========================
+    WORKSPACES (Hyprland)
+    =========================
+  */
+  
+  "hyprland/workspaces": {
+    "format": "{name}", // Show workspace number/name
+
+    // Optional: show only active monitor workspaces
+    "all-outputs": false,
+
+    // Minimal behavior tuning
+    "disable-scroll": false,
+    "warp-on-scroll": false
+  },
+
+  /*
+    =========================
+    CLOCK
+    =========================
+  */
+  "clock": {
+    "format": "{:%H:%M}", // 24h format
+    "interval": 60 // update every minute
+  },
+
+  /*
+    =========================
+    BATTERY
+    =========================
+  */
+  "battery#BAT0": {
+    "format": "{capacity}%",
+    "bat": "BAT0"
+  },
+
+  // "battery#BAT1": {
+  //   "format": "{capacity}%",
+  //   "bat": "BAT1"
+  // }
+}
